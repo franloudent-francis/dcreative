@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { DM_Sans } from "next/font/google";
 import Script from "next/script";
 
-export const runtime = "edge";
 import "./globals.css";
 
 const dmSans = DM_Sans({
