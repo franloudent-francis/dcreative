@@ -1,12 +1,15 @@
+import { initOpenNextCloudflareForDev } from "@opennextjs/cloudflare";
+
+initOpenNextCloudflareForDev();
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    formats: ["image/avif", "image/webp"],
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256],
+    // Cloudflare Pages does not run the Next.js image optimisation server;
+    // serve images as-is and let Cloudflare's Polish handle optimisation.
+    unoptimized: true,
   },
-  compress: true,
 };
 
 export default nextConfig;

@@ -1,0 +1,8 @@
+name = "d-creative-studio"
+compatibility_date = "2024-09-23"
+compatibility_flags = ["nodejs_compat"]
+pages_build_output_dir = ".open-next/assets"
+
+[vars]
+# Add any environment variables here, e.g.:
+# NEXT_PUBLIC_SITE_URL = "https://dcreativestudio.com"

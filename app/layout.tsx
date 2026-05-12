@@ -1,5 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { DM_Sans } from "next/font/google";
+
+export const runtime = "edge";
 import "./globals.css";
 
 const dmSans = DM_Sans({
