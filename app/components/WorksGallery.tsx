@@ -7,25 +7,25 @@ import { X } from "lucide-react";
 type GalleryImage = { src: string; alt: string };
 
 const row1: GalleryImage[] = [
-  { src: "/images/hero/girl-ugc.png", alt: "AI UGC style girl creative for lifestyle brands" },
-  { src: "/images/hero/mens.png", alt: "Men's fashion model creative by D Creative Studio" },
-  { src: "/images/hero/jewels.png", alt: "AI jewellery model creative for accessories brands" },
-  { src: "/images/hero/kuruthi.png", alt: "AI fashion model in ethnic wear for clothing brands" },
-  { src: "/images/hero/product.png", alt: "AI product photography creative for ecommerce" },
-  { src: "/images/hero/tops.png", alt: "AI fashion model creative for kurti and tops brands" },
-  { src: "/images/hero/women.png", alt: "AI women fashion model creative for clothing brands" },
-  { src: "/images/hero/mens pose.png", alt: "Men's fashion model pose creative" },
+  { src: "/images/hero/girl-ugc.webp", alt: "AI UGC style girl creative for lifestyle brands" },
+  { src: "/images/hero/mens.webp", alt: "Men's fashion model creative by D Creative Studio" },
+  { src: "/images/hero/jewels.webp", alt: "AI jewellery model creative for accessories brands" },
+  { src: "/images/hero/kuruthi.webp", alt: "AI fashion model in ethnic wear for clothing brands" },
+  { src: "/images/hero/product.webp", alt: "AI product photography creative for ecommerce" },
+  { src: "/images/hero/tops.webp", alt: "AI fashion model creative for kurti and tops brands" },
+  { src: "/images/hero/women.webp", alt: "AI women fashion model creative for clothing brands" },
+  { src: "/images/hero/mens pose.webp", alt: "Men's fashion model pose creative" },
 ];
 
 const row2: GalleryImage[] = [
-  { src: "/images/product-before-after.png", alt: "Product photography before and after by D Creative Studio" },
-  { src: "/images/offer banner.png", alt: "Offer banner creative for social media promotions" },
-  { src: "/images/realesate ads.png", alt: "Real estate advertisement creative by D Creative Studio" },
-  { src: "/images/product ad creatives.png", alt: "Product ad creatives for Instagram and social media" },
-  { src: "/images/product ads.png", alt: "AI product advertisement visuals for ecommerce brands" },
-  { src: "/images/charcter and pose.png", alt: "AI character and pose creative by D Creative Studio" },
-  { src: "/images/charcter and texture.png", alt: "AI character with texture creative for clothing brands" },
-  { src: "/images/charcter consitency .png", alt: "AI character consistency creative by D Creative Studio" },
+  { src: "/images/product-before-after.webp", alt: "Product photography before and after by D Creative Studio" },
+  { src: "/images/offer banner.webp", alt: "Offer banner creative for social media promotions" },
+  { src: "/images/realesate ads.webp", alt: "Real estate advertisement creative by D Creative Studio" },
+  { src: "/images/product ad creatives.webp", alt: "Product ad creatives for Instagram and social media" },
+  { src: "/images/product ads.webp", alt: "AI product advertisement visuals for ecommerce brands" },
+  { src: "/images/charcter and pose.webp", alt: "AI character and pose creative by D Creative Studio" },
+  { src: "/images/charcter and texture.webp", alt: "AI character with texture creative for clothing brands" },
+  { src: "/images/charcter consitency .webp", alt: "AI character consistency creative by D Creative Studio" },
 ];
 
 function GalleryRow({
@@ -52,6 +52,7 @@ function GalleryRow({
               src={img.src}
               alt={img.alt}
               fill
+              loading="lazy"
               className="creative-image"
               sizes="240px"
             />

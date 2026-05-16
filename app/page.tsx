@@ -24,7 +24,7 @@ import { MotionArticle, Reveal } from "./components/Motion";
 import { FaqAccordion } from "./components/FaqAccordion";
 import { WorksGallery } from "./components/WorksGallery";
 
-const whatsappNumber = "910000000000";
+const whatsappNumber = "918608750899";
 const whatsappMessage =
   "Hi D Creative Studio, I want AI creatives for my business. Please share details.";
 const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
@@ -34,13 +34,13 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
 const navItems = ["Services", "Portfolio", "Process", "FAQ"];
 
 const fanImages = [
-  { src: "/images/hero/girl-ugc.png", alt: "AI UGC style girl creative for lifestyle brands" },
-  { src: "/images/hero/mens.png", alt: "Men's fashion model creative by D Creative Studio" },
-  { src: "/images/hero/jewels.png", alt: "AI jewellery model creative for accessories brands" },
-  { src: "/images/hero/kuruthi.png", alt: "AI fashion model in ethnic wear for clothing brands" },
-  { src: "/images/hero/product.png", alt: "AI product photography creative for ecommerce" },
-  { src: "/images/hero/tops.png", alt: "AI fashion model creative for kurti and tops brands" },
-  { src: "/images/hero/women.png", alt: "AI women fashion model creative for clothing brands" },
+  { src: "/images/hero/girl-ugc.webp", alt: "AI UGC style girl creative for lifestyle brands" },
+  { src: "/images/hero/mens.webp", alt: "Men's fashion model creative by D Creative Studio" },
+  { src: "/images/hero/jewels.webp", alt: "AI jewellery model creative for accessories brands" },
+  { src: "/images/hero/kuruthi.webp", alt: "AI fashion model in ethnic wear for clothing brands" },
+  { src: "/images/hero/product.webp", alt: "AI product photography creative for ecommerce" },
+  { src: "/images/hero/tops.webp", alt: "AI fashion model creative for kurti and tops brands" },
+  { src: "/images/hero/women.webp", alt: "AI women fashion model creative for clothing brands" },
 ];
 
 const services = [
@@ -403,9 +403,8 @@ export default function Home() {
             <p className="footer-tagline">Creatives delivered fast.<br />No photoshoot needed.</p>
           </div>
         </div>
-        <div className="footer-bottom">
+        <div className="footer-bottom" style={{ justifyContent: "center" }}>
           <p>&copy; {new Date().getFullYear()} D Creative Studio. All rights reserved.</p>
-          <p className="footer-made">Made with AI, crafted with care.</p>
         </div>
       </footer>
     </main>
